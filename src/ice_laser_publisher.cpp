@@ -25,9 +25,9 @@ int main(int argc, char **argv)
   int baud_rate;
   std::string frame_id;
 
-  priv_nh.param("port", port, std::string("/dev/ttyUSB0"));
-  priv_nh.param("baud_rate", baud_rate, 115200);
-  priv_nh.param("frame_id", frame_id, std::string("ice_laser"));
+  priv_nh.param("port", port, std::string("/dev/ttyUSB1"));
+  priv_nh.param("baud_rate", baud_rate, 230400);
+  priv_nh.param("frame_id", frame_id, std::string("laser"));
 
   boost::asio::io_service io;
 
